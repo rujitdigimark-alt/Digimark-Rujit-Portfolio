@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -25,6 +26,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} h-full antialiased scroll-smooth`}
     >
+      <GoogleTagManager gtmId="GTM-P9RDTWQJ" />
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Header />
         <main className="flex-grow">{children}</main>
