@@ -26,6 +26,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} h-full antialiased scroll-smooth`}
     >
+      {/* Google Tag Manager (GTM) - Required to be at the top level */}
       <GoogleTagManager gtmId="GTM-P9RDTWQJ" />
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Header />
